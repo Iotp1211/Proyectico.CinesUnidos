@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cines Unidos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="inicialForm">
+    <h3>Caja Inicial</h3>
+    <h5>Cantidad de dinero en caja: <input type="text" id="inicialForm_inMontCaja" placeholder=""></input></h5>
+    <button id="inicialForm_btContinuar">Continuar</button>
+
+    </section>
+    
+    <section id="mainForm">
+      <h3>Cines Unidos</h3>
+      <h5>Cantidad de dinero en caja: <span id="mainForm_lblmontCaja"></h5>
+      <table id="mainForm_tabla">
+        <tr>
+          <th>Familia</th>
+          <th>Personas</th>
+          <th>Días</th>
+          <th>Monto a Pagar</th>
+        </tr>
+      </table>
+      <h5>Familia que pagó más: <span id="mainForm_lblFamiliaMayorPago"></span></h5>
+      <h5>Promedio pagados los días lunes: <span id="mainForm_lblPromPagoLunes">0</span>$</h5>
+      <h5>Ingreso Total de la jornada: <span id="mainForm_lblIngresoTotal">0</span>$</h5>
+      <button id="mainForm_btAgregar">Agregar Familia</button>
+
+    </section>
+
+    <section id="familiaForm">
+      <h3>Datos de la familia</h3>
+      <input type="text" id="familiaForm_inApellido" placeholder="Apellido"></input>
+      <input type="text" id="familiaForm_inPersonas" placeholder="Personas"></input>
+      <input type="text" id="familiaForm_inDias"  placeholder="Dias"></input>
+      <button id="familiaForm_btAceptar">Aceptar</button> 
+    </section>
+  </body>
+  <script type="module">
+    import Cl_controlador from "./js/Cl_controlador.js";
+    new Cl_controlador()
+ </script>
+</html>
